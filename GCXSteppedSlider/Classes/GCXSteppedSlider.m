@@ -145,7 +145,7 @@ static CGFloat const GCXSteppedSliderStepLabelDefaultTopMargin = 15.0;
                 if ([self.delegate respondsToSelector:@selector(steppedSlider:stepImageForValue:)]) {
                     image = [self.delegate steppedSlider:self stepImageForValue:value];
                     if (image) {
-                        image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+                        image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
                         stepImageView.image = image;
                     }
                 }
